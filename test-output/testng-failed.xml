@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.bookshop.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test.All(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.bookshop.testcases.AddToCartPageTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="verifyAddToCartMsg"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+        </methods>
+      </class> <!-- com.bookshop.testcases.AddToCartPageTest -->
+    </classes>
+  </test> <!-- Test.All(failed) -->
+</suite> <!-- Failed suite [Suite] -->

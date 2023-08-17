@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Regression.Test">
+  <parameter name="browser" value="Chrome"></parameter>
+  <groups>
+     <run>
+        <include name="Regression"></include>
+     </run>
+  </groups>
+    <classes>
+      <class name="com.bookshop.testcases.IndexPageTest"/>
+      <class name="com.bookshop.testcases.ProductPageTest"/>
+      <class name="com.bookshop.testcases.LoginPageTest"/>
+      <class name="com.bookshop.testcases.AddToCartPageTest"/>
+      <class name="com.bookshop.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
